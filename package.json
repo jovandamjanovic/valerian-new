@@ -18,5 +18,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://jovandamjanovic.github.io/valerian-new"
+  "homepage": "http://valerian.netlify.com/"
 }
