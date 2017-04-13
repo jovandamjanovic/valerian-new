@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
 import Characteristics from './Characteristics'
+import '../style/Character.css'
 
 class Character extends Component {
     constructor (props) {
@@ -10,11 +11,13 @@ class Character extends Component {
     
     render () {
         return (
-            <div>
-                <p className="App-intro">
+            <div className="container">
+                <p className="charName">
                     {this.props.name}                    
                 </p>
-                <Characteristics characteristics={this.props.characteristics}/>
+                <div className="characteristics">
+                    <Characteristics characteristics={this.props.characteristics} />
+                </div>
             </div>
         )
     }

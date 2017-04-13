@@ -12,18 +12,18 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         init: () => {
-            dispatch(setName("Steva"));
-            dispatch(setCharacteristics([{name: 'WS',value: 25}, 
-                                         {name: 'BS',value: 25}, 
-                                         {name: 'S',value: 25}, 
-                                         {name: 'T',value: 25}, 
-                                         {name: 'Agi',value: 25,unnat: 6}, 
-                                         {name: 'Per',value: 25,unnat: 6}, 
-                                         {name: 'Int',value: 25}, 
-                                         {name: 'WP',value: 25}, 
-                                         {name: 'Fel',value: 25,unnat: 6}, 
-                                         {name: 'Cor',value: 25}, 
-                                         {name: 'Inf',value: 25}]));
+            dispatch(setName("Valerian"));
+            dispatch(setCharacteristics([{name: 'WS', value: 45}, 
+                                         {name: 'BS', value: 25}, 
+                                         {name: 'S', value: 25}, 
+                                         {name: 'T', value: 25}, 
+                                         {name: 'Agi', value: 50, unnat: 11}, 
+                                         {name: 'Int', value: 42}, 
+                                         {name: 'Per', value: 35, unnat: 9}, 
+                                         {name: 'WP', value: 41, unnat: 10}, 
+                                         {name: 'Fel', value: 70, unnat: 9}, 
+                                         {name: 'Inf', value: 98}, 
+                                         {name: 'Cor', value: 19}]));
         }
     }
 }
