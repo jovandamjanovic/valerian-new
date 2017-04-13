@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
+import Characteristics from './Characteristics'
 
 class Character extends Component {
     constructor (props) {
@@ -9,15 +10,19 @@ class Character extends Component {
     
     render () {
         return (
-            <p className="App-intro">
-                {this.props.name}                    
-            </p>
+            <div>
+                <p className="App-intro">
+                    {this.props.name}                    
+                </p>
+                <Characteristics characteristics={this.props.characteristics}/>
+            </div>
         )
     }
 }
 
 Character.propTypes = {
-    name: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired,
+    characteristics: PropTypes.array.isRequired
 }
 
 export default Character   

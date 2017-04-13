@@ -5,4 +5,11 @@ const setName = name => {
     }
 };
 
-export { setName };
+const setCharacteristics = data => {
+    return {
+        type: 'CHARACTER_CHARACTERISTICS',
+        data: data
+    }
+}
+
+export { setName, setCharacteristics };

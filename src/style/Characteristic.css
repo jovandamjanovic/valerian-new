@@ -1,0 +1,36 @@
+.charContainer {
+  border: 1px solid black;
+  border-left: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 3.5em;
+}
+
+.charContainer:first-child {
+    border-left: 1px solid black;
+}
+
+.charTop {
+  font-family: monospace;
+  border-bottom: 1px solid black;
+}
+
+.charBot {
+  display: flex;
+  flex-direction: row;
+}
+
+.charLeft {
+  font-family: monospace;
+  float: left;
+  width: 50%;
+  color: white;
+  background-color: black;
+}
+
+.charRight {
+  font-family: monospace;
+  float: right;
+  width: 50%;
+}
